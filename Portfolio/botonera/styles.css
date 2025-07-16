@@ -1,0 +1,102 @@
+body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        
+        video{
+            position: fixed;
+            top: 0;
+            left: 0;
+            min-width: 100%;
+            min-height: 100%;
+            object-fit: contain;
+            z-index: -1;
+        }
+
+        h1 {
+            color: white;
+            margin-bottom: 0px;margin-top: 0px;
+            font-family: "Open Sans", sans-serif;font-optical-sizing: auto;
+            font-size: 45px;font-weight: lighter;text-align: center;
+        }
+        p{
+            color: white;
+            margin-bottom: 40px;margin-top: 10px;
+            font-family: "Open Sans", sans-serif;font-optical-sizing: auto;
+            font-size: 25px;font-weight: lighter;text-align: center;
+        }
+
+        .botonera {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            width: 300px;
+        }
+
+        .boton-sonido {
+            padding: 15px 25px;
+            font-size: 18px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .boton-sonido:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        .boton-sonido:active {
+            transform: translateY(1px);
+        }
+
+        #boton1 {
+            background-color: rgb(5, 9, 44);
+            color: white;
+            border: 2px solid white;font-size: 30px;
+        }
+
+        #boton2 {
+            background-color: rgb(5, 9, 44);
+            color: white;
+            border: 2px solid white;font-size: 30px;
+        }
+
+        #boton3 {
+            background-color: rgb(5, 9, 44);
+            color: white;
+            border: 2px solid white;font-size: 30px;
+        }
+
+        #boton4 {
+            background-color: rgb(5, 9, 44);
+            color: white;
+            border: 2px solid white;font-size: 30px;
+        }
+
+        a{
+            color: white;
+            margin-top: 80px;margin-bottom: 0px;
+            font-family: "Open Sans", sans-serif;font-optical-sizing: auto;
+            font-size: 20px;font-weight: lighter;
+            text-decoration: none;
+        }
+        .p2{
+            color: white;
+            margin-top: 50px;margin-bottom: 0px;
+            font-family: "Open Sans", sans-serif;font-optical-sizing: auto;
+            font-size: 20px;font-weight: lighter;
+        }
+
+@media (max-width: 430px) {
+    body{
+        padding: 0px 60px;
+    }
+}

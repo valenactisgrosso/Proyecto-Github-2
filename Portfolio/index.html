@@ -1,0 +1,160 @@
+<!DOCTYPE html> 
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Personal</title>
+    <link rel="icon" href="icono/icon3.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- EmailJS Library -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+
+<header>
+    <div>
+        <h1>Mi Portfolio</h1>
+    </div>
+    <nav>
+        <ul>
+           <li><a href="index.html">Inicio</a></li>
+           <li><a href="#formulario">Formulario</a></li>
+           <li><a href="../index.html" target="_blank">Linktree</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="main">
+  <div class="main_contenedor">
+    <div class="main_texto">
+      <h1>Bienvenido a mi <br> <span>Portfolio</span></h1>
+      <p>Valentina Actis Grosso</p>
+      <a href="#ultimos_arts" class="main_boton">Ver proyectos</a>
+    </div>
+    <div class="main_foto">
+      <img src="imagenes/yo.png" alt="Foto Valentina">
+    </div>
+  </div>
+</section>
+
+<section class="sobre_mi">
+    <h2>Sobre Mi</h2>
+    <p>Soy Valentina Actis Grosso, tengo 19 años y vivo en Ciudad Jardín. Trabajo como analista de datos en PwC mientras estudio Negocios Digitales en UADE. 
+    Me interesa todo lo que conecta tecnología, datos y personas. Disfruto entender cómo funcionan las cosas, encontrar patrones en la información y transformar 
+    datos en ideas que sirvan para tomar decisiones. Me gustan los desafíos, aprender cosas nuevas y formar parte de proyectos donde pueda crecer y aportar mi mirada.</p>
+    <div>
+        <a href="#formulario" class="form_button">Contactame</a>
+        <a href="docs/CV.pdf" download="CV-Valentina-Actis-Grosso.pdf" class="cv_button">Descargar CV</a>
+    </div>
+</section>
+
+<section id="ultimos_arts" class="ultimos_arts">
+    <h2>Mis proyectos</h2>
+    <div class="articulos">
+        <article>
+            <img src="imagenes/todolist.png" alt="Lista de Tareas" width="275">
+            <div class="card">
+                <a href="todolist/index.html"><h3>Lista de Tareas</h3></a>
+            </div>
+        </article>
+        <article>
+            <img src="imagenes/sonido.png" alt="Botonera de Sonidos" width="275">
+            <div class="card">
+                <a href="botonera/index.html"><h3>Botonera de Sonidos</h3></a>
+            </div>
+        </article>
+        <article>
+            <img src="imagenes/imagenes.png" alt="Galería de Imágenes" width="275">
+            <div class="card">
+                <a href="slider-hero/index.html"><h3>Galería de Imágenes</h3></a>
+            </div>
+        </article>
+    </div>
+</section>
+
+<section class="skills">
+    <h2>Habilidades</h2>
+    <div class="skills__contenedor">
+        <div class="skills__columna">
+            <h3>Técnicas</h3>
+            <div class="skills__tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>Phyton</span>
+                <span>Looker Studio</span>
+                <span>Power BI</span>
+                <span>Excel</span>
+            </div>
+        </div>
+        <div class="skills__columna">
+            <h3>Blandas</h3>
+            <div class="skills__tags">
+                <span>Comunicación</span>
+                <span>Trabajo en equipo</span>
+                <span>Proactividad</span>
+                <span>Resolución de problemas</span>
+                <span>Organización</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="formulario" class="formulario">
+    <form id="checkout-form">
+        <h2>¡Trabajemos juntos!</h2>
+        <p>Si te interesó mi perfil, y tenés una propuesta laboral, no dudes en contactarme</p>
+
+        <input type="text" id="name" name="name" placeholder="Nombre" required>
+
+        <input type="email" id="email" name="email" placeholder="Mail" required>
+
+        <textarea id="message" name="message" placeholder="Mensaje"></textarea>
+
+        <button type="submit">Enviar</button>
+    </form>
+</section>
+
+<footer>
+    <div>
+        <h1>Valentina Actis Grosso, 2025</h1>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="https://www.instagram.com/_valenag/" target="_blank"><img src="imagenes/instagram.png" alt="Instagram" width="50px"></a></li>
+            <li><a href="https://www.linkedin.com/in/valentina-actis-grosso/" target="_blank"><img src="imagenes/linkedin.png" alt="LinkedIn" width="50px"></a></li>
+        </ul>
+    </nav>
+</footer>
+
+<script>
+    // Inicializa EmailJS
+    (function () {
+        emailjs.init("IvGaXZYgzYdRiP6Z1"); // Tu clave pública
+    })();
+
+    // Función para enviar el email
+    function sendEmail(event) {
+        event.preventDefault();
+        
+        emailjs.sendForm('service_pl62499', 'template_02b4fv8', event.target)
+            .then(() => {
+                alert("Correo enviado exitosamente");
+                document.getElementById("checkout-form").reset();
+            })
+            .catch(error => {
+                console.error(error);
+                alert("Error al enviar correo: " + (error.text || "Revisa consola para más detalles"));
+            });
+    }
+
+    // Asocia el evento submit al formulario
+    document.getElementById("checkout-form").addEventListener("submit", sendEmail);
+</script>
+
+</body>
+</html>

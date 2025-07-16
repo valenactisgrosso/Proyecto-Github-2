@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hero Slider</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <video autoplay muted loop id="background-video">
+        <source src="imagenes/blue2.mp4" type="video/mp4">
+    </video>
+  <header>
+        <div class="logo">
+            <li><a href="../index.html#ultimos_arts">Volver</a></li>
+        </div>
+    </header>
+  <h1>Las 7 Maravillas del Mundo</h1>
+  <div class="hero-slider">
+    <div class="slider-container">
+      <div class="slide active" style="background-image: url('imagenes/muralla.jpg');"></div>
+      <div class="slide" style="background-image: url('imagenes/cristo.jpg');"></div>
+      <div class="slide" style="background-image: url('imagenes/machu.jpg');"></div>
+      <div class="slide" style="background-image: url('imagenes/chichen.jpg');"></div>
+      <div class="slide" style="background-image: url('imagenes/coliseo.jpg');"></div>
+      <div class="slide" style="background-image: url('imagenes/petra.webp');"></div>
+      <div class="slide" style="background-image: url('imagenes/taj.jpg');"></div>
+    </div>
+    <button class="nav-btn prev-btn">&lt;</button>
+    <button class="nav-btn next-btn">&gt;</button>
+    <div class="dots">
+      <span class="dot active" data-index="0"></span>
+      <span class="dot" data-index="1"></span>
+      <span class="dot" data-index="2"></span>
+      <span class="dot" data-index="3"></span>
+      <span class="dot" data-index="4"></span>
+      <span class="dot" data-index="5"></span>
+      <span class="dot" data-index="6"></span>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <title>Botonera de Sonidos</title>
+</head>
+
+<body>
+    <video autoplay muted loop id="background-video">
+        <source src="imagenes/rain4.mp4" type="video/mp4">
+    </video>
+    <h1>Los mejores sonidos para ASMR</h1>
+    <p>Hace clic para relajar tu mente</p>
+    <div class="botonera">
+        <button id="boton1" class="boton-sonido">🌧️</button>
+        <button id="boton2" class="boton-sonido">🫧</button>
+        <button id="boton3" class="boton-sonido">🍃</button>
+        <button id="boton4" class="boton-sonido">🔥</button>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Crear elementos de audio
+            const audio1 = new Audio('./sonidos/rainstorm.mp3');
+            const audio2 = new Audio('./sonidos/burbujas.mp3');
+            const audio3 = new Audio('./sonidos/naturaleza.mp3');
+            const audio4 = new Audio('./sonidos/fire.mp3');
+
+
+            // Obtener referencias a los botones
+            const boton1 = document.getElementById('boton1');
+            const boton2 = document.getElementById('boton2');
+            const boton3 = document.getElementById('boton3');
+            const boton4 = document.getElementById('boton4');
+
+
+            // Asignar eventos a los botones usando un bucle
+            const audios = [audio1, audio2, audio3, audio4];
+            const botonesArr = [boton1, boton2, boton3, boton4];
+
+            botonesArr.forEach((boton, i) => {
+                boton.addEventListener('click', function () {
+                    audios[i].currentTime = 0;
+                    audios[i].play();
+                });
+            });
+
+
+            // Opcional: agregar efecto visual al presionar
+            const botones = document.querySelectorAll('.boton-sonido');
+            botones.forEach(boton => {
+                boton.addEventListener('mousedown', function () {
+                    this.style.opacity = '0.8';
+                });
+
+                boton.addEventListener('mouseup', function () {
+                    this.style.opacity = '1';
+                });
+
+                boton.addEventListener('mouseleave', function () {
+                    this.style.opacity = '1';
+                });
+            });
+        });
+    </script>
+    <p class="p2"><a href="../index.html#ultimos_arts">Volver</a></p>
+</body>
+</html>

@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('imagenes/background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 60px;
+}
+
+header div li {
+    display: flex;
+    list-style: none;
+}
+
+header div a {
+    font-family: "Montserrat", sans-serif;
+    display: inline-block;
+  font-size: 15px;
+    width: 110px;
+    padding: 10px 0px;
+    text-align: center;
+    background-color: rgb(236, 72, 153);
+    border-radius: 25px;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+    color: white; font-size: 100%;
+}
+
+header div a:hover {
+    transform: scale(1.05);
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    padding-top: 8px;
+}
+
+.container {
+    background: white;
+    padding: 30px 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 90%;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(236, 72, 153);
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.input-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#nuevaTarea {
+    flex: 1;
+    padding: 12px 15px;
+    border: 2px solid #fedced;
+    border-radius: 12px;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+}
+
+#nuevaTarea:focus {
+    border-color: #ff99cc;
+    box-shadow: 0 0 8px #ffccdd;
+}
+
+button {
+    background-color: #ff66b2;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 12px 18px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #ff99cc;
+}
+
+.lista-tareas {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tarea {
+    background-color: #ffeef8;
+    border-radius: 12px;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: box-shadow 0.3s;
+}
+
+.tarea:hover {
+    box-shadow: 0 5px 15px rgba(255, 153, 204, 0.2);
+}
+
+.tarea span {
+    font-size: 16px;
+    color: #555;
+}
+
+.tarea.completada span {
+    text-decoration: line-through;
+    color: #bbb;
+}
+
+.acciones {
+    display: flex;
+    gap: 8px;
+}
+
+.acciones button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 5px;
+    transition: transform 0.2s;
+}
+
+.acciones button:hover {
+    transform: scale(1.2);
+}
+
+/* Icon colors */
+.acciones .editar {
+    color: #ff66b2;
+}
+
+.acciones .guardar {
+    color: #66cc99;
+    display: none;
+}
+
+.acciones .eliminar {
+    color: #ff4444;
+}
+
+.acciones .completar {
+    color: #66ccff;
+}
+
+.edit-input {
+    padding: 8px;
+    border-radius: 8px;
+    border: 2px solid #ff99cc;
+    font-size: 16px;
+    width: 100%;
+}
+
+/* Empty state with emoji */
+.empty-state {
+    text-align: center;
+    color: #999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.empty-icon {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.empty-title {
+    font-size: 18px;
+    color: #666;
+    margin: 0;
+}
+
+.empty-subtitle {
+    font-size: 14px;
+    color: #ff66b2;
+    margin: 5px 0 15px 0;
+}
+
+.empty-count {
+    font-size: 12px;
+    color: #aaa;
+}
+
+@media (max-width: 430px) {
+    header{
+        padding: 30px 30px;
+    }
+
+    .content {
+    padding: 20px 20px;
+    }
+
+.container {
+    background: white;
+    padding: 30px 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 90%;
+    }
+}
