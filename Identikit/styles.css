@@ -1,0 +1,135 @@
+body{
+    margin: 0; margin-bottom: 2%;
+    background-color: rgb(247, 225, 215);
+    text-align: center;
+}
+h1{
+    background-color: rgb(237, 175, 184);
+    color: rgb(60, 70, 71);
+    font-family: 'Corben', serif;font-weight: 500;font-style: normal;font-size: 160%;
+    margin-bottom: 0%;margin-top: 0%;
+}
+h2 {
+    color: rgb(201, 127, 137);
+    margin-top: 15px;margin-bottom: 5px;
+    font-family: "Corben", serif;font-weight: 400;font-style: normal;font-size: 130%;
+}
+h3 {
+    margin: 0;
+    color: rgb(201, 127, 137);
+    font-family: "Corben", serif;font-weight: 400;font-style: normal;font-size: 130%;
+}
+p{
+    color: rgb(60, 70, 71);
+    font-family: 'Libre Franklin', sans-serif;font: weight 600px;font-style: normal;font-size: 100%;
+}
+li{
+    display: inline;
+    color: rgb(60, 70, 71);
+    font-family: 'Corben', serif;font-weight: 500;font-style: normal;font-size: 110%;
+    margin-right: 30px;
+}
+nav{
+    background-color: rgb(237, 175, 184);
+    text-align: center;
+    margin-top: 0%;margin-bottom: 0%;
+}
+a{
+    text-decoration: none;
+    color: rgb(60, 70, 71);
+}
+ul{
+    margin: 0%;padding: 0%;
+}
+.linea{
+    height: 2px;
+    background-color: rgb(201, 127, 137);
+    margin: 0;
+}
+.reseñas{
+    text-decoration: none;
+    color: rgb(199, 93, 109);
+    font-weight: bold;
+}
+.tabletitle{
+    color: rgb(201, 127, 137);
+    background-color: transparent;
+    height: 60px;
+    line-height: 60px;
+    margin: 0%;
+    font-size: 180%;
+}
+table{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    text-align: center;
+}
+.quiztitle{
+    background-color: rgb(237, 175, 184);
+    color: rgb(60, 70, 71);
+    font-family: 'Corben', serif;font-weight: 500;font-style: normal;font-size: 140%;
+    margin-bottom: 0%;margin: 0%;
+    width: 12%;
+    height: 40px;line-height: 40px;
+}
+.imgquiz{
+    margin-right: 15px;
+}
+.imgquiz2{
+    margin-bottom: 15px
+}
+.gossiptitle{
+    background-color: rgb(237, 175, 184);
+    color: rgb(60, 70, 71);
+    font-family: 'Corben', serif;font-weight: 500;font-style: normal;font-size: 160%;
+    margin-bottom: 2%;margin-top: 1%;
+}
+.pquiz{
+    display: inline;
+    margin-left: 10px;margin-right:10px;
+    text-align: center;
+}
+.bodyplaylist{
+    margin: 0;
+    padding: 0;
+    margin-top: 0%;
+}
+aside{
+    background-color: rgb(47, 73, 77);
+    display: inline-block;
+    width: 20%;
+    height: 480px;
+    vertical-align: top;
+    text-align: center;
+}
+section{
+    background-color: rgb(247, 225, 215);
+    display: inline-block;
+    width: 80%;
+    height:480px;
+    margin-top: 0;
+}
+footer{
+    background-color: rgb(237, 175, 184);
+    height: 50px;
+    text-align: center;
+}
+iframe{
+    display: inline;margin-bottom: 5px;
+}
+.pbeige{
+    color: rgb(247, 225, 215);
+    font-family: 'Libre Franklin', sans-serif;font: weight 600px;font-style: normal;font-size: 80%;
+    margin-top: 10px;
+    display: block;
+}
+.h2playlist {
+    color: rgb(60, 70, 71);
+    margin-top: 10px;margin-bottom: 10px;
+    font-family: "Corben", serif;font-weight: 400;font-style: normal;font-size: 140%;
+}
+.h2beige {
+    color: rgb(247, 225, 215);
+    margin-top: 10px;margin-bottom: 5px;
+    font-family: "Corben", serif;font-weight: 400;font-style: normal;font-size: 120%;
+}

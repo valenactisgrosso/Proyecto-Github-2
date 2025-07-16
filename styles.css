@@ -1,0 +1,63 @@
+body{
+    margin: 0; margin-bottom: 2%;
+    background-color: pink;
+    text-align: center;
+    background-image: url(imagenes/wallpaper\ 6.png);
+    background-size: cover;
+    font-family: "Cabin", sans-serif;font-optical-sizing: auto;font-style: normal;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.profile {
+    width: 100px;
+    border-radius: 100px;
+    margin-top: 37px; margin-bottom: 10px;
+}
+header ul li {
+    display: inline;
+}
+nav {
+    margin-top: 18px;
+}
+nav li {
+    margin-bottom: 20px;
+}
+nav a {
+    display: inline-block;
+    width: 400px;
+    padding: 15px 0;
+    text-align: center;
+    background-color: rgb(227, 207, 203);
+    border-radius: 25px;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+}
+nav a:link,
+nav a:visited{
+    text-decoration: none;color: rgb(110, 74, 67)
+}
+nav a:hover {
+    color: rgb(114, 8, 35);
+    transform: scale(1.03);
+}
+header a{
+    display: inline-block; /* necesario para que funcione transform */
+    transition: transform 0.2s ease-in-out;
+}
+header a:hover{
+    transform: scale(1.1);
+}
+header h1 {
+    color: wheat;font-size: 150%;font-weight: 200;margin-bottom: 2px;
+}
+header h2{
+    color: wheat;font-size: 130%;font-weight: 200;
+}
+ul li img{
+    margin-top: 10px;margin-bottom: 0px;margin-right: 10px;
+}
+a{
+    text-decoration: none;
+}
